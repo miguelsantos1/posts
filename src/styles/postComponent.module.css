@@ -1,0 +1,25 @@
+.post {
+  background-color: #181818;
+  padding: 20px 20px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.postHeader {
+  display: flex;
+  gap: .5rem;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.userIcon {
+  border-radius: 2px;
+  background: #404040;
+}
+
+.description {
+  width: 300px;
+  overflow-x: auto;
+}
