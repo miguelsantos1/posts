@@ -49,13 +49,6 @@ export default function Home() {
            )
           }) }
 
-          <Post 
-          title="Miguel"
-          description="Aqui é só uma prévia, para rodar o site siga as instruções no meu github!"
-          />
-
-
-
       </section>
     </main>
 
