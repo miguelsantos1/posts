@@ -6,6 +6,10 @@ import Link from 'next/link'
 
 export default function Post() {
 
+  function showAlert() {
+    alert("Postado!")
+  }
+
   return(
     <>
       <header>
@@ -40,6 +44,7 @@ export default function Post() {
           className={styles.button}
           value="POSTAR!"
           type="submit"
+          onClick={showAlert}
           />
 
         </form>

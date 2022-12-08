@@ -13,7 +13,7 @@ export default async function CreatePost(req, res) {
     }
   })
 
-  return res.status(201).redirect('/');
+  return res.status(201);
 
 
 }
