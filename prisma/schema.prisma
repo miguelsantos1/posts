@@ -6,13 +6,13 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:../prisma/post.db"
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
 }
 
 
 model post {
-  id            String @id @default(uuid())
+  id            String @id @default(auto()) @map("_id") @db.ObjectId
   name          String
   description   String
   createdAt     DateTime @default(now())
