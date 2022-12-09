@@ -13,6 +13,6 @@ export default async function CreatePost(req, res) {
     }
   })
 
-  res.send('<h1>dados enviados</h1>')
+  res.send('<h1>dados enviados</h1> <br> <a href="/"> Voltar </a>')
 
 }
