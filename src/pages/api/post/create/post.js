@@ -13,7 +13,6 @@ export default async function CreatePost(req, res) {
     }
   })
 
-  return res.redirect('/');
-
+  res.redirect('/')
 
 }

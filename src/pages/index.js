@@ -38,7 +38,6 @@ export default function Home() {
 
       <section className={styles.feed}>
 
-
        { posts.map(post => {
          return(
            <Post 
