@@ -13,6 +13,6 @@ export default async function CreatePost(req, res) {
     }
   })
 
-  res.redirect('/')
+  res.send('<h1>dados enviados</h1>')
 
 }
