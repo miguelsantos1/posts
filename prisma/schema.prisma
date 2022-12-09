@@ -6,13 +6,13 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
+  provider = "mongodb"
   url      = env("DATABASE_URL")
 }
 
 
 model post {
-  id            String @id @default(uuid())
+  id            String @id @default(auto()) @map("_id") @db.ObjectId
   name          String @unique
   description   String @unique
   createdAt     DateTime @default(now())
