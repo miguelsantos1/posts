@@ -30,6 +30,7 @@ export default function Post() {
 
           name="description" 
           placeholder="DESCRIÇÃO"
+          maxLength={300}
           rows={5}
           required
           >
