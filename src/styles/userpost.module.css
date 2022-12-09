@@ -1,0 +1,29 @@
+.post {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.postContent {
+  background: #181818;
+  padding: 2rem;
+  height: 30vh;
+}
+
+.name {
+  margin-bottom: 1rem;
+}
+
+.postHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.description {
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+
+
