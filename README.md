@@ -6,6 +6,7 @@ Make a post.
 The following tools were used in building the project:
 
 - CSS
+- REACT
 - NEXT
 - SQL
 - PRISMA
