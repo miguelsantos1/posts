@@ -6,7 +6,8 @@
 .postContent {
   background: #181818;
   padding: 2rem;
-  height: 30vh;
+  height: 100%;
+  min-height: 30vh;
 }
 
 .name {
@@ -21,6 +22,8 @@
 }
 
 .description {
+  padding-bottom: 10px;
+  padding-right: 10px;
   margin: 1rem 0;
   overflow-x: auto;
 }

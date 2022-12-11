@@ -16,6 +16,7 @@
   display: grid;
   gap: 0 10px;
   grid-template-columns: 1fr;
+  overflow: auto;
 }
 
 @media (min-width: 500px) {
@@ -25,9 +26,8 @@
 }
 
 
-@media (min-width: 1100px) {
+@media (min-width: 1300px) {
   .feed {
     grid-template-columns: 1fr 1fr 1fr;
-    
   }
 }
