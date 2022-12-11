@@ -7,15 +7,22 @@ import { PlusCircle } from 'phosphor-react'
 import Link from 'next/link'
 
  
-export default function Home() {
+export async function getServerSideProps() {
 
-  const [posts, setPost] = useState([])
+  
+  const data = await fetch(`${process.env.WEB}/api/post/get/posts`)
+  const posts = await data.json()
 
-  useEffect(() => {
-    axios('/api/post/get/posts').then((response) => {
-      setPost(response.data)
-    })
-  }, [])
+  return {
+    props: {
+      posts
+    }
+  }
+
+}
+
+export default function Home(props) {
+
 
   return (
 
@@ -38,7 +45,7 @@ export default function Home() {
 
       <section className={styles.feed}>
 
-       { posts.map(post => {
+       { props.posts.map(post => {
          return(
            <Post 
            key={ post?.id }
