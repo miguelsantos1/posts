@@ -6,14 +6,25 @@ import axios from 'axios'
 
 import styles from '../../styles/userpost.module.css'
 
-export default function Post() {
-  const router = useRouter();
-  const name = router.query.name
+export async function getServerSideProps(context) {
+
+  const name = context.query.name
+
+  return{
+    props: {
+      name: name
+    }
+  }
+
+}
+
+export default function Post(props) {
+
 
   const [userPost, setUserPost] = useState({})
 
   useEffect(() => {
-    axios(`/api/post/get/name/${name}`).then((response) => {
+    axios(`/api/post/get/name/${props.name}`).then((response) => {
       setUserPost(response.data)
     })
   }, [])
